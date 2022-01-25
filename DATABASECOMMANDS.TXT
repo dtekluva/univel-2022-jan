@@ -15,3 +15,7 @@ SELECT * FROM `food_names`
 SELECT name FROM food_names;
 SELECT name FROM food_names WHERE name LIKE '%soup%';
 SELECT name FROM food_names WHERE name LIKE 'a%';
+
+
+# CREATE TABLE WITH AUTO_INCREMENT
+create table bla(id INT(4) PRIMARY KEY AUTO_INCREMENT, name char(5));
