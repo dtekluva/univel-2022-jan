@@ -1,0 +1,21 @@
+CREATE DATABASE class;
+CREATE TABLE food_names (name VARCHAR(30));
+SELECT * FROM `food_names`
+INSERT INTO food_names (name) VALUES("Affang");
+SELECT * FROM `food_names`
+SELECT * FROM `food_names`
+INSERT INTO food_names (name) VALUES("Fisherman soup");
+INSERT INTO food_names (name) VALUES("Banga soup");
+INSERT INTO food_names (name) VALUES("Sea food okra soup");
+INSERT INTO food_names (name) VALUES("Edikangikong Soup");
+INSERT INTO food_names (name) VALUES("Atama Soup");
+SELECT * FROM `food_names`
+
+SELECT * FROM `food_names`
+SELECT name FROM food_names;
+SELECT name FROM food_names WHERE name LIKE '%soup%';
+SELECT name FROM food_names WHERE name LIKE 'a%';
+
+
+# CREATE TABLE WITH AUTO_INCREMENT
+create table bla(id INT(4) PRIMARY KEY AUTO_INCREMENT, name char(5));
