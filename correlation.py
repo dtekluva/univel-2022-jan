@@ -4,16 +4,21 @@ import numpy as np
 def print_as_table(**kwargs):
     
     for key in kwargs.keys():
-        print(str(key).ljust(5), end=" | ") 
+        print(str(key).center(10), end=" | ") 
         # .center(5) is a string method to align values in a particular padding and center them
         # other options are .ljust() which will align to the right
     print() #cause next value to move under
 
-    for key in kwargs.values():
-        print(str(key).ljust(5), end=" | ")
+    for values in zip(*(kwargs.values())):
+
+        for value in values:
+
+            print(str(value).center(10), end=" | ")
+
+        print()
     
 
-print_as_table(x =[1,3], y = 30, z = 40, bola = 15)
+print_as_table(Bisola =[1,3,4], Tolu = [1,3,5], Roukie = [1,3,6], Bridget = [1,3,6])
 
 # x = [1,2,3,4,5,6,7]
 # y = [21,31,41,51,13,42,67]
