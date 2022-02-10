@@ -13,7 +13,7 @@ def print_as_table(**kwargs):
 
         for value in values:
 
-            print(str(value).center(6), end=" | ")
+            print(str(str(value)).center(6), end=" | ")
 
         print()
     
